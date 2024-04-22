@@ -1,0 +1,156 @@
+:root {
+  /* margin right/left of page ends */
+  --m-rl: 1em;
+  /* border blue */
+  --b-blue: rgb(149, 182, 243);
+}
+
+* {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+/* header styling */
+header {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornflowerblue;
+  border-width: 5px 0px;
+  border-style: solid;
+  border-color: var(--b-blue);
+}
+
+header h1 {
+  margin-left: var(--m-rl);
+}
+
+header li {
+  margin-right: var(--m-rl);
+  display: inline-block;
+}
+
+figure {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 150px;
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+
+figure h4 {
+  color: white;
+  margin-right: var(--m-rl);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  height: 150px;
+  margin-left: var(--m-rl);
+  margin-top: var(--m-rl);
+  max-height: 150px;
+}
+.aboutMe h1 {
+  display: flex;
+  margin-left: var(--m-rl);
+  width: 30%;
+  text-align: right;
+}
+
+.aboutMe p {
+  margin-left: var(--m-rl);
+  margin-right: var(--m-rl);
+  padding-left: var(--m-rl);
+  width: 70%;
+  border-left: 10px solid black;
+  max-height: 148px;
+}
+
+.work h1 {
+  display: flex;
+  margin-left: var(--m-rl);
+  width: 30%;
+  text-align: right;
+}
+
+.work div {
+  display: flex;
+  margin-left: var(--m-rl);
+  margin-right: var(--m-rl);
+  padding-left: var(--m-rl);
+  width: 70%;
+  border-left: 10px solid black;
+  max-height: 148px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 152px;
+  min-width: 185px;
+  border: solid var(--b-blue);
+  border-width: 5px;
+  margin-bottom: var(--m-rl);
+  margin-right: var(--m-rl);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.article-double {
+  width: 95%;
+}
+
+article h4,
+article h5 {
+  text-indent: 0.5em;
+  text-align: left;
+  white-space: nowrap;
+  width: 180px;
+  background-color: var(--b-blue);
+}
+article h5 {
+  padding-top: 2px;
+  padding-left: 4px;
+  padding-bottom: 2px;
+}
+
+.article-single {
+  width: 45%;
+}
+
+.odin {
+  background-image: url(/assets/images/jigsaw.png);
+}
+
+.landing {
+  background-image: url(/assets/images/hydroPlane.png);
+}
+
+.terraform {
+  background-image: url(/assets/images/terraform.png);
+}
+
+.tasks {
+  background-image: url(/assets/images/tasking.png);
+}
+
+.horiseon {
+  background-image: url(/assets/images/tech_webbing.png);
+}
