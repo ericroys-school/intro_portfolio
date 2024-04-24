@@ -44,6 +44,19 @@ li {
   display: inline-block;
 }
 
+header a {
+  color: black;
+}
+
+/* give the nav links and orange rounded border
+   when hovering over them
+*/
+header a:hover {
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+}
+
 figure {
   display: flex;
   justify-content: right;
@@ -74,6 +87,9 @@ section h1 {
   text-align: right;
 }
 
+/* set margin/padding/border for the items
+   on the right, with the black line separator
+*/
 .aboutMe p,
 .contact nav {
   margin-left: var(--m-rl);
@@ -83,9 +99,21 @@ section h1 {
   border-left: 10px solid black;
 }
 
+/* font size/height for texts */
+.aboutMe p,
+.contact li a {
+  font-size: large;
+  line-height: 1.5;
+}
+
+/* contact text a different colory than the other texts */
+.contact a {
+  color: slategray;
+  margin: var(--m-rl);
+}
+
 .work div {
   display: flex;
-  /* flex-direction: column; */
   margin-left: var(--m-rl);
   margin-right: var(--m-rl);
   padding-left: var(--m-rl);
@@ -97,12 +125,14 @@ section h1 {
   align-items: flex-start;
 }
 
+/* style for the nav in the contacts section */
 .contact nav {
   display: flex;
   justify-content: center;
   align-content: space-between;
 }
 
+/* style for all the articles */
 article {
   display: flex;
   flex-direction: column;
@@ -117,10 +147,24 @@ article {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+article:hover,
+article:focus {
+  opacity: 85%;
+  background-blend-mode: luminosity;
+}
+
+/* double width article */
 .article-double {
   width: 95%;
 }
 
+/* single width article */
+.article-single {
+  width: 45%;
+}
+
+/* syling for the h4 & 5 in the article */
 article h4,
 article h5 {
   text-indent: 0.5em;
@@ -129,16 +173,19 @@ article h5 {
   width: 180px;
   background-color: var(--b-blue);
 }
+
+/* additional styling specific to the h5 in the article */
 article h5 {
   padding-top: 2px;
   padding-left: 4px;
   padding-bottom: 2px;
 }
 
-.article-single {
-  width: 45%;
+footer {
+  height: 100px;
 }
 
+/* add background images to the various sections */
 .odin {
   background-image: url(/assets/images/jigsaw.png);
 }
