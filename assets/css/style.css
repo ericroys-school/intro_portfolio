@@ -196,22 +196,22 @@ footer {
 
 /* add background images to the various sections */
 .odin {
-  background-image: url(./assets/images/jigsaw.png);
+  background-image: url(../images/jigsaw.png);
 }
 
 .landing {
-  background-image: url(./assets/images/hydroPlane.png);
+  background-image: url(../images/hydroPlane.png);
 }
 
 .terraform {
-  background-image: url(./assets/images/terraform.png);
+  background-image: url(../images/terraform.png);
 }
 
 .tasks {
-  background-image: url(./assets/images/tasking.png);
+  background-image: url(../images/tasking.png);
 }
 
 .horiseon {
-  background-image: url(./assets/images/tech_webbing.png);
-  background-image: url(./assets/images/tech_webbing.png);
+  background-image: url(../images/tech_webbing.png);
+  background-image: url(../images/tech_webbing.png);
 }
