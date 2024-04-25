@@ -36,6 +36,13 @@ header {
 
 header h1 {
   margin-left: var(--m-rl);
+  color: slategray;
+  padding: 0.15em 1em;
+  border: solid black;
+  border-width: 1px 0 3px 4px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -15px 5px 50px 5px black;
 }
 
 /* all li display as row not column */
@@ -69,6 +76,8 @@ figure {
 
 figure h4 {
   color: white;
+  text-wrap: wrap;
+  margin-left: var(--m-rl);
   margin-right: var(--m-rl);
 }
 
