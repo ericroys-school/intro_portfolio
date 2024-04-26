@@ -4,6 +4,8 @@
 
 An initial portfolio using html and css to showcase some of the things done in various learning or work settings.
 
+![Screenshot of the portfolio web project](./assets/images/screenshot.png)
+
 ## Table of Contents
 
 - [Installation](#installation)
